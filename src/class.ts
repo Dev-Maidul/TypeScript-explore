@@ -1,21 +1,17 @@
 // ! Object oriented programming
 
-class Animal{
-    name:string;
-    species:string;
-    sound:string;
-
-    constructor(name:string,species:string,sound:string){
-        this.name=name;
-        this.species=species;
-        this.sound=sound
+class Animal {
+    constructor(public name: string, public species: string, public sound: string) {
+        
+     }
+    
+    makeSound() {
+        console.log(`The ${this.name} is making sound ${this.sound}`);
     }
-    makeSound(){
-        console.log(`The ${this.name} is making sound ${this.sound}`)
-    }
-};
+}
 
-const dog= new Animal("Kutta lig","dog","gew ghew");
-const cat= new Animal("Pretty","Cat","Mew Mew");
+const dog = new Animal("Kutta lig", "Dog", "Gew Ghew");
+const cat = new Animal("Pretty", "Cat", "Mew Mew");
+
 cat.makeSound();
-dog.makeSound()
+dog.makeSound();
